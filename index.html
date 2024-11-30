@@ -1,101 +1,159 @@
 <!DOCTYPE html>
 <html lang="tr">
-    <head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="utf-8">
-    <title>WitFlix</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wit Flix</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-        <header>
-          <div class="header-content">
-            <img src="./resimler/WitFlix.png" alt="logo">
-            <nav>
-              <div class="nav-items">
-                <a href="/">Topic 1</a>
-                <a href="/">Topic 2</a>
-                <a href="/">Topic 3</a>
-                <a href="/">Topic 4</a>
-              </nav>
-                <div class="search">
-                    <search>
-                        <form>
-                          <input id="fsrch" type="Search" placeholder="search">  
-                          <i class="fas fa-bell icon"></i>
-                          <i class="fas fa-circle icon"></i>
-                        </form>
-                      </search>
-                    </div>
-        </header>
-        <main>
-            <h1>MOVIE NAME</h1>
-            <div class="rating">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="rating-imdb"><strong>7.3</strong> IMDB</span>
+
+  <header>
+    <img src="./resimler/WitFlix.png" alt="Logo" class="logo">
+    <nav>
+      <a href="#">Topic1</a>
+      <a href="#">Topic2</a>
+      <a href="#">Topic3</a>
+      <a href="#">Topic4</a>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Search">
+      <i class="fas fa-bell icon"></i>
+      <img src="profile.jpg" alt="Profile" class="profile">
+    </div>
+  </header>
+
+  <section class="hero-content">
+    <h1>MOVIE NAME</h1>
+    <div class="user-ratings">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      <span class="user-rating"><strong>7.3</strong></span>
+      <span class="imdb-rating">IMDB</span>
+      <span class="age">16+</span>
+      <span class="duration"><strong>2 h 21 min</strong></span>
+    </div>
+    <p>Film açıklaması burada olacak...</p>
+    <ul class="movie-details">
+      <li><span style="color: red;">Starring:</span> Lorem Ipsum, Lorem Piksum</li>
+      <li><span style="color: red;">Starring:</span> Lorem Ipsum, Lorem Piksum</li>
+      <li><span style="color: red;">Starring:</span> Lorem Ipsum, Lorem Piksum</li>
+    </ul>
+    <div class="btn btn-lg">
+        <i class="fas fa-play"></i> Play Now
+    </div>
+  </section>
+
+  <section class="suggestions">
+    <div class="suggestion-row">
+      <div class="suggestion-title">
+        <h2>Popular Movies</h2>
+        <a href="#">View All</a>
+      </div>
+      <div class="suggestion-content">
+        <div class="suggestion-item">
+          <div class="suggestion-item-content">
+            <h3>Film 1</h3>
+            <div class="suggestion-details">
                 <span class="age">16+</span>
                 <span class="duration"><strong>2 h 21 min</strong></span>
-                <p>Buraya paragraf gelecek</p>
-                <div class="details">
-                    <ul>
-                        <li><span style="color: red;">Starring:</span> İsim Soyisim</li>
-                        <li><span style="color: red;">Starring:</span> İsim Soyisim</li>
-                        <li><span style="color: red;">Starring:</span> İsim Soyisim</li>
-                    </ul>
-                </div>
-                <div class="btn-lg">
-                    <i class="fas fa-play"></i>
-                    <button>Play Now</button>
-                </div>
-            </div>     
-        </main>
-        <section class="category">
-            <h2>Popular Movies</h2>
-            <a href="/">View All</a>
-            <div class="carousel">
-                <div class="movie-card">Film 1</div>
-                <div class="movie-card">Film 2</div>
-                <div class="movie-card">Film 3</div>
-</div>
-        </section>
-        <section class="category">
-            <h2>Recommended for You</h2>
-            <a href="/">View All</a>
-            <div class="carousel">
-                <div class="movie-card">Film 1</div>
-                <div class="movie-card">Film 2</div>
-                <div class="movie-card">Film 3</div>
-</div>
-        </section>
-</body>
-<footer>
-    <div class="bilgi">
-    <nav>
-        <div class="nav-items">
-          <a href="/">Term Of Use</a>
-          <a href="/">Privacy-Politcy</a>
-          <a href="/">FAQ</a>
-          <a href="/">Watch List</a>
-          <p>Buraya metin gelecek.</p>
-        </nav>
+            </div>
+            <div class="btn btn-md">Play Now</div>
+          </div>
+        </div>
+        <div class="suggestion-item">
+          <div class="suggestion-item-content">
+            <h3>Film 2</h3>
+            <div class="suggestion-details">
+                <span class="age">16+</span>
+                <span class="duration"><strong>2 h 21 min</strong></span>
+            </div>
+            <div class="btn btn-md">Play Now</div>
+          </div>
+        </div>
+        <div class="suggestion-item">
+          <div class="suggestion-item-content">
+            <h3>Film 3</h3>
+            <div class="suggestion-details">
+                <span class="age">16+</span>
+                <span class="duration"><strong>2 h 21 min</strong></span>
+            </div>
+            <div class="btn btn-md">Play Now</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="social-items">
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-youtube"></i>
-    <i class="fa-brands fa-twitter"></i>
-  </div>
-  <div class="butonlar">
-    <p>Apps</p>
-    <div class="app-butonlar">
+  </section>
+
+  <section class="suggestions">
+    <div class="suggestion-row">
+      <div class="suggestion-title">
+        <h2>Recommended for You</h2>
+        <a href="#">View All</a>
+      </div>
+      <div class="suggestion-content">
+        <div class="suggestion-item">
+          <div class="suggestion-item-content">
+            <h3>Film 1</h3>
+            <div class="suggestion-details">
+                <span class="age">16+</span>
+                <span class="duration"><strong>2 h 21 min</strong></span>
+            </div>
+            <div class="btn btn-md">Play Now</div>
+          </div>
+        </div>
+        <div class="suggestion-item">
+          <div class="suggestion-item-content">
+            <h3>Film 2</h3>
+            <div class="suggestion-details">
+                <span class="age">16+</span>
+                <span class="duration"><strong>2 h 21 min</strong></span>
+            </div>
+            <div class="btn btn-md">Play Now</div>
+          </div>
+        </div>
+        <div class="suggestion-item">
+          <div class="suggestion-item-content">
+            <h3>Film 3</h3>
+            <div class="suggestion-details">
+                <span class="age">16+</span>
+                <span class="duration"><strong>2 h 21 min</strong></span>
+            </div>
+            <div class="btn btn-md">Play Now</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-nav">
+      <nav>
+        <a href="#">Term Of Use</a>
+        <a href="#">Privacy-Politcy</a>
+        <a href="#">FAQ</a>
+        <a href="#">Watch List</a>
+        <p>Buraya metin gelecek.</p>
+      </nav>
+    </div>
+    <div class="footer-social">
+        <p class="social-items">FollowUs</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+    <div class="app-buttons">
+        <p class="social-items">Apps</p>
         <img src="./resimler/appstore-icon.png" alt="appstore-icon">
         <img src="./resimler/googleplay-icon.png" alt="googleplay-icon">
     </div>
-  </div>
-</footer>
+  </footer>
 
+</body>
 </html>
