@@ -258,8 +258,24 @@
   .suggestion-title a{
     display: none;
   }
-    footer {
+  footer {
     flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  footer .footer-nav {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  footer .footer-social,
+  footer .app-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 3rem;
   }
 }
   
